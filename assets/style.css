@@ -67,3 +67,10 @@ button:hover {
     font-weight: bold;
     padding: 10px 20px;
 }
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
