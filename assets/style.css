@@ -25,24 +25,17 @@ body.correct {
     --hue: var(--hue-correct);
 }
   
-  .wrong {
+body.wrong {
     --hue: var(--hue-wrong);
 }
   
-.container {
+#container {
     width: 800px;
     max-width: 80%;
     background-color: white;
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 0 10px 2px;
-}
-  
-.btn-grid {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 10px;
-    margin: 20px 0;
 }
   
 .btn {
@@ -55,8 +48,9 @@ body.correct {
     outline: none;
 }
   
-.btn:hover {
+button:hover {
     border-color: black;
+    transform: scale(1.05);
 }
   
 .btn.correct {
@@ -68,18 +62,8 @@ body.correct {
     --hue: var(--hue-wrong);
 }
   
-.start-btn, .next-btn {
+#startTime {
     font-size: 1.5rem;
     font-weight: bold;
     padding: 10px 20px;
-}
-  
-.controls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-  
-.hide {
-    display: none;
 }
