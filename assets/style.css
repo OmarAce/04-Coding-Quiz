@@ -70,6 +70,26 @@ button:hover {
     box-shadow: 0 0 10px 2px;
 }
 
+a {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: white;
+    padding: 1.75%;
+    border-radius: 5px;
+    font-weight: bolder;
+    box-shadow: 0 0 10px 2px;
+}
+
+a, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    transform: scale(1.05);
+}
+
 #createDiv {
     font-weight: bolder;
 }
@@ -109,4 +129,10 @@ input {
     font-weight: bolder;
     padding: 2%;
     font-size: 3rem;
+}
+
+#goBack, #clear {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
 }
