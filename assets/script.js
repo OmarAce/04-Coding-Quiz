@@ -133,6 +133,7 @@ function allDone() {
     if (secondsLeft >= 0) {
         var timeRemaining = secondsLeft;
         var createP2 = document.createElement("p");
+        createP2.className = "hsText";
         clearInterval(holdInterval);
         createP.textContent = "Your final score is: " + timeRemaining;
 

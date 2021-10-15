@@ -21,14 +21,7 @@ body {
     background-color: hsl(var(--hue), 100%, 20%);
 }
   
-body.correct {
-    --hue: var(--hue-correct);
-}
-  
-body.wrong {
-    --hue: var(--hue-wrong);
-}
-  
+
 #container {
     width: 800px;
     max-width: 80%;
@@ -53,15 +46,6 @@ button:hover {
     transform: scale(1.05);
 }
   
-.btn.correct {
-    --hue: var(--hue-correct);
-    color: black;
-}
-  
-.btn.wrong {
-    --hue: var(--hue-wrong);
-}
-  
 #startTime {
     font-size: 1.5rem;
     font-weight: bold;
@@ -73,4 +57,56 @@ button:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+#currentTime {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: white;
+    padding: 1.75%;
+    border-radius: 5px;
+    font-weight: bolder;
+    box-shadow: 0 0 10px 2px;
+}
+
+#createDiv {
+    font-weight: bolder;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background-color: hsl(var(--hue), 100%, 50%);
+    padding: 1.75%;
+    border-radius: 5px;
+    font-weight: bolder;
+    margin: 5%;
+    line-height: 3;
+    color: white;
+    border: 1px solid black, 100%, 30%;
+}
+
+li:hover {
+    transform: scale(1.05);
+    background-color: hsl(var(--hue), 100%, 65%);
+}
+
+label {
+    margin-right: 10px;
+}
+input {
+    margin-bottom: 20px;
+    width: 50%;
+    border: 1px solid lightgray;
+}
+
+#createP {
+    font-weight: bolder;
+    padding: 2%;
+    font-size: 3rem;
 }
