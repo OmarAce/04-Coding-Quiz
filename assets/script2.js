@@ -1,5 +1,3 @@
-// High Scores Javascript
-
 // Variables
 var highScore = document.querySelector("#highScore");
 var clear = document.querySelector("#clear");
@@ -11,7 +9,7 @@ clear.addEventListener("click", function () {
     location.reload();
 });
 
-// Retreives local stroage 
+// Retreives local storage 
 var allScores = localStorage.getItem("allScores");
 allScores = JSON.parse(allScores);
 
